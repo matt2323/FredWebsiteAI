@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Wine &amp; Spirits at 130 Main | Boonville, NY</title>
+  <meta name="description" content="Your local wine and spirits shop in Boonville, NY. Nearly two decades of friendly, knowledgeable service. Local NY wines, craft spirits, and more." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wine &amp; Spirits at 130 Main" />
+  <meta property="og:description" content="Your neighborhood wine and spirits shop in Boonville, NY — friendly staff, local NY wines, and a selection for every occasion." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preload hero background image -->
+  <link rel="preload" as="image" href="images/468623565_868401148780078_1188632662249623709_n.jpg" />
+
+  <!-- Google Fonts — non-blocking via preconnect + media swap trick -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" /></noscript>
+
+  <!-- Static Tailwind CSS (pre-built, no runtime JS needed) -->
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-body bg-cream text-brown antialiased">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#home" class="font-display leading-tight group">
+        <span class="block text-gold text-xl sm:text-2xl font-bold group-hover:text-gold-light transition-colors duration-200">Wine &amp; Spirits</span>
+        <span class="block font-body font-light text-cream/70 text-xs tracking-[0.25em] uppercase">at 130 Main</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex items-center gap-7 font-body text-sm tracking-wide uppercase text-cream/80">
+        <li><a href="#about" class="hover:text-gold transition-colors duration-200">About</a></li>
+        <li><a href="#selection" class="hover:text-gold transition-colors duration-200">Selection</a></li>
+        <li><a href="#hours" class="hover:text-gold transition-colors duration-200">Hours</a></li>
+        <li><a href="#connect" class="hover:text-gold transition-colors duration-200">Find Us</a></li>
+        <li>
+          <a href="tel:+13159422212" class="btn-primary text-xs px-4 py-2.5 rounded">
+            (315) 942&#8209;2212
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden text-cream focus:outline-none p-1" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-7 h-7">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-7 h-7 hidden">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile menu dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gold/20 bg-brown">
+      <ul class="flex flex-col px-6 py-5 gap-5 font-body uppercase tracking-wide text-sm text-cream/80">
+        <li><a href="#about" class="mobile-link hover:text-gold transition-colors duration-200">About</a></li>
+        <li><a href="#selection" class="mobile-link hover:text-gold transition-colors duration-200">Selection</a></li>
+        <li><a href="#hours" class="mobile-link hover:text-gold transition-colors duration-200">Hours</a></li>
+        <li><a href="#connect" class="mobile-link hover:text-gold transition-colors duration-200">Find Us</a></li>
+        <li class="pt-1">
+          <a href="tel:+13159422212" class="btn-primary inline-block text-center text-xs px-6 py-3 rounded w-full">
+            Call Us &mdash; (315) 942&#8209;2212
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <div class="hero-bg absolute inset-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-brown/85 via-brown/80 to-brown/90"></div>
+
+    <div class="relative z-10 px-5 max-w-4xl mx-auto hero-content">
+      <p class="hero-item font-body text-gold/90 tracking-[0.3em] uppercase text-xs sm:text-sm mb-5">
+        Boonville, New York
+      </p>
+
+      <h1 class="hero-item font-display text-5xl sm:text-6xl lg:text-7xl text-cream font-bold leading-tight mb-4">
+        Wine &amp; Spirits<br>
+        <em class="not-italic text-gold">at 130 Main</em>
+      </h1>
+
+      <div class="hero-item divider-gold mx-auto my-7">
+        <span class="diamond"></span>
+      </div>
+
+      <p class="hero-item font-body text-cream/75 text-lg sm:text-xl font-light max-w-xl mx-auto mb-11 leading-relaxed">
+        Nearly two decades of friendly service, local New York wines, and a spirits selection for every occasion — right in the heart of Boonville.
+      </p>
+
+      <div class="hero-item flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://maps.app.goo.gl/v2sfAuvqnneqZLHx8" target="_blank" rel="noopener noreferrer"
+           class="btn-primary font-body font-bold uppercase tracking-widest text-sm px-9 py-4 rounded">
+          Get Directions
+        </a>
+        <a href="tel:+13159422212"
+           class="btn-secondary font-body font-bold uppercase tracking-widest text-sm px-9 py-4 rounded">
+          Call Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2 text-gold/50">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section id="about" class="py-24 sm:py-32 bg-cream overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+        <!-- Images: stacked pair -->
+        <div class="relative">
+          <!-- Main image: Beauty horse + bourbons -->
+          <div class="rounded-xl overflow-hidden shadow-2xl">
+            <img
+              src="images/494489065_18041065202561082_5826214002706797186_n.jpg"
+              alt="Bottles of bourbon displayed on the store counter alongside a wooden horse figurine named Beauty"
+              class="w-full h-72 sm:h-96 object-cover object-center"
+              width="900" height="832"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+          <!-- Secondary image: winter exterior — offset card -->
+          <div class="absolute -bottom-8 -right-4 sm:-right-8 w-1/2 rounded-xl overflow-hidden shadow-2xl border-4 border-cream">
+            <img
+              src="images/475737637_18031549490561082_1018543830646559757_n.jpg"
+              alt="Wine and Spirits at 130 Main storefront on a snowy winter night in Boonville NY"
+              class="w-full h-36 sm:h-48 object-cover object-center"
+              width="600" height="749"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="pt-10 lg:pt-0">
+          <p class="section-label">Our Story</p>
+          <h2 class="font-display text-4xl sm:text-5xl text-brown font-bold mt-2 mb-6">
+            A Neighborhood Tradition
+          </h2>
+          <div class="divider-gold mb-8">
+            <span class="diamond"></span>
+          </div>
+          <p class="font-body text-brown/75 text-lg leading-relaxed mb-5">
+            For nearly two decades, Wine &amp; Spirits at 130 Main has been more than just a liquor store — we're a fixture of the Boonville community. Whether you're hunting for the perfect bottle for a special occasion or stopping in for your weekend staple, our friendly, knowledgeable staff is always here to help.
+          </p>
+          <p class="font-body text-brown/60 text-base leading-relaxed">
+            We take pride in curating a thoughtful selection that celebrates the outstanding wines of New York State alongside bottles from the world's finest wine regions — all with the personal touch you can only find at a true neighborhood shop. We accept cash, Visa, MasterCard, American Express, and Discover.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       OUR SELECTION
+       ============================================================ -->
+  <section id="selection" class="py-24 sm:py-32 bg-cream-dark">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+      <div class="text-center mb-16">
+        <p class="section-label">What We Carry</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-brown font-bold mt-2">Our Selection</h2>
+        <div class="divider-gold mx-auto mt-7">
+          <span class="diamond"></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Wine -->
+        <div class="selection-card selection-card-photo">
+          <div class="card-photo-wrap">
+            <img
+              src="images/484435347_18036114263561082_1094780136461418070_n.jpg"
+              alt="Two premium red wine bottles — Mr. S. Malbec and a Paso Robles Cabernet Sauvignon"
+              class="card-photo"
+              width="800" height="1000"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="font-display text-2xl text-brown font-bold mb-3">Wine</h3>
+            <p class="font-body text-brown/65 leading-relaxed text-sm sm:text-base">
+              Explore a curated collection spanning the globe — from bold Napa Cabernets and crisp Italian whites to approachable everyday bottles that won't break the bank. Something for every palate and every occasion.
+            </p>
+          </div>
+        </div>
+
+        <!-- Spirits -->
+        <div class="selection-card selection-card-photo">
+          <div class="card-photo-wrap">
+            <img
+              src="images/582442929_18062719466561082_437968913382869425_n.jpg"
+              alt="Premium single-malt Scotch whisky bottles including Oban 14, Lagavulin 16, Balvenie Caribbean Cask, and Glenfiddich 15"
+              class="card-photo"
+              width="800" height="1067"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="font-display text-2xl text-brown font-bold mb-3">Spirits</h3>
+            <p class="font-body text-brown/65 leading-relaxed text-sm sm:text-base">
+              From premium single-malt scotches and craft bourbons to tequila, gin, rum, and vodka — we stock the classics and love helping you discover something new. Ask us for a recommendation anytime.
+            </p>
+          </div>
+        </div>
+
+        <!-- Local Favorites -->
+        <div class="selection-card selection-card-photo featured-card">
+          <span class="local-badge">New York Made</span>
+          <div class="card-photo-wrap">
+            <img
+              src="images/481448105_911587691182449_385088183839520463_n.jpg"
+              alt="Thousand Islands Winery Gewürztraminer New York 2022 alongside a Chianti Banfi — local and international wines side by side"
+              class="card-photo"
+              width="800" height="800"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="font-display text-2xl text-brown font-bold mb-3">Local Favorites</h3>
+            <p class="font-body text-brown/65 leading-relaxed text-sm sm:text-base">
+              Proud to spotlight the best of New York State — Finger Lakes Rieslings, Hudson Valley reds, and craft spirits made right here in the Empire State. Support local, drink exceptionally well.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOURS & LOCATION
+       ============================================================ -->
+  <section id="hours" class="py-24 sm:py-32 bg-brown">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+      <div class="text-center mb-16">
+        <p class="section-label-light">Find Us</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-cream font-bold mt-2">Hours &amp; Location</h2>
+        <div class="divider-gold-light mx-auto mt-7">
+          <span class="diamond-light"></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+        <!-- Hours + Contact -->
+        <div>
+          <!-- Hours table -->
+          <div class="bg-brown-mid/60 border border-gold/20 rounded-xl p-7 sm:p-9 mb-8">
+            <h3 class="font-display text-gold text-xl mb-6">Store Hours</h3>
+            <table class="w-full font-body text-cream text-sm sm:text-base">
+              <tbody>
+                <tr class="border-b border-gold/10">
+                  <td class="py-3 text-cream/60 font-light">Monday</td>
+                  <td class="py-3 text-right font-semibold">9:00 AM &ndash; 9:00 PM</td>
+                </tr>
+                <tr class="border-b border-gold/10">
+                  <td class="py-3 text-cream/60 font-light">Tuesday</td>
+                  <td class="py-3 text-right font-semibold">9:00 AM &ndash; 9:00 PM</td>
+                </tr>
+                <tr class="border-b border-gold/10">
+                  <td class="py-3 text-cream/60 font-light">Wednesday</td>
+                  <td class="py-3 text-right font-semibold">9:00 AM &ndash; 9:00 PM</td>
+                </tr>
+                <tr class="border-b border-gold/10">
+                  <td class="py-3 text-cream/60 font-light">Thursday</td>
+                  <td class="py-3 text-right font-semibold">9:00 AM &ndash; 9:00 PM</td>
+                </tr>
+                <tr class="border-b border-gold/10">
+                  <td class="py-3 text-cream/60 font-light">Friday</td>
+                  <td class="py-3 text-right font-semibold">9:00 AM &ndash; 9:00 PM</td>
+                </tr>
+                <tr class="border-b border-gold/10">
+                  <td class="py-3 text-cream/60 font-light">Saturday</td>
+                  <td class="py-3 text-right font-semibold">9:00 AM &ndash; 9:00 PM</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gold font-semibold">Sunday</td>
+                  <td class="py-3 text-right font-bold text-gold">12:00 PM &ndash; 9:00 PM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Address & phone -->
+          <div class="space-y-5 font-body mb-9">
+            <div class="flex items-start gap-4 text-cream">
+              <div class="mt-0.5 text-gold flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold">130 Main St</p>
+                <p class="text-cream/60 text-sm">Boonville, NY 13309</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 text-cream">
+              <div class="text-gold flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z" />
+                </svg>
+              </div>
+              <a href="tel:+13159422212" class="hover:text-gold transition-colors duration-200 font-semibold">(315) 942-2212</a>
+            </div>
+          </div>
+
+          <a href="https://maps.app.goo.gl/v2sfAuvqnneqZLHx8" target="_blank" rel="noopener noreferrer"
+             class="btn-primary inline-block font-body font-bold uppercase tracking-widest text-sm px-7 py-4 rounded">
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Google Maps embed -->
+        <div class="rounded-xl overflow-hidden border-2 border-gold/25 shadow-2xl">
+          <!--
+            HOW TO GET YOUR MAP EMBED URL:
+            1. Go to maps.google.com
+            2. Search "Wine and Spirits at 130 Main, Boonville NY"
+            3. Click Share → "Embed a map" tab
+            4. Copy the <iframe> src URL and paste it below
+
+            The placeholder below shows the general location until you get the exact embed URL.
+          -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.443!2d-75.3335984!3d43.4836278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d8dfd1641c8ced%3A0xa95ef1d3c6bfed52!2sWine%20and%20Spirits%20at%20130%20Main!5e0!3m2!1sen!2sus!4v1708000000000"
+            width="100%"
+            height="440"
+            style="border:0; display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Wine and Spirits at 130 Main — location map">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STAY CONNECTED
+       ============================================================ -->
+  <section id="connect" class="py-24 sm:py-32 bg-cream">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+      <p class="section-label">Stay In The Loop</p>
+      <h2 class="font-display text-4xl sm:text-5xl text-brown font-bold mt-2 mb-4">Stay Connected</h2>
+      <div class="divider-gold mx-auto mb-8">
+        <span class="diamond"></span>
+      </div>
+      <p class="font-body text-brown/65 text-lg mb-14 max-w-lg mx-auto leading-relaxed">
+        Follow us on social media for the latest arrivals, seasonal picks, local recommendations, and updates from the store.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto mb-12">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/wineandspiritsat130main/"
+           target="_blank" rel="noopener noreferrer"
+           class="social-card instagram-card">
+          <div class="social-icon mb-3">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-white">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+          </div>
+          <span class="font-display text-xl font-bold text-white">Instagram</span>
+          <span class="font-body text-white/75 text-xs mt-1">@wineandspiritsat130main</span>
+          <span class="font-body text-white/50 text-xs uppercase tracking-widest mt-3">Follow Us &rarr;</span>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100069936797613"
+           target="_blank" rel="noopener noreferrer"
+           class="social-card facebook-card">
+          <div class="social-icon mb-3">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-white">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </div>
+          <span class="font-display text-xl font-bold text-white">Facebook</span>
+          <span class="font-body text-white/75 text-xs mt-1">Wine &amp; Spirits at 130 Main</span>
+          <span class="font-body text-white/50 text-xs uppercase tracking-widest mt-3">Like &amp; Follow &rarr;</span>
+        </a>
+
+      </div>
+
+      <!-- Google Maps CTA -->
+      <a href="https://maps.app.goo.gl/v2sfAuvqnneqZLHx8"
+         target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-2 font-body text-sm text-brown/50 hover:text-wine transition-colors duration-200 underline underline-offset-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z" />
+        </svg>
+        Leave us a review on Google Maps
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="bg-brown border-t border-gold/20 pt-14 pb-8">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div>
+          <h4 class="font-display text-gold text-xl mb-4">Wine &amp; Spirits<br><span class="text-base font-normal">at 130 Main</span></h4>
+          <p class="font-body text-cream/50 text-sm leading-relaxed">
+            Your neighborhood wine and spirits shop, serving the Boonville community for nearly two decades with friendly service and a passion for great drinks.
+          </p>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h4 class="font-body text-gold/80 uppercase tracking-widest text-xs mb-5">Quick Links</h4>
+          <ul class="space-y-3 font-body text-cream/50 text-sm">
+            <li><a href="#about" class="hover:text-gold transition-colors duration-200">About the Store</a></li>
+            <li><a href="#selection" class="hover:text-gold transition-colors duration-200">Our Selection</a></li>
+            <li><a href="#hours" class="hover:text-gold transition-colors duration-200">Hours &amp; Location</a></li>
+            <li><a href="#connect" class="hover:text-gold transition-colors duration-200">Stay Connected</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-body text-gold/80 uppercase tracking-widest text-xs mb-5">Contact</h4>
+          <address class="font-body text-cream/50 text-sm not-italic space-y-2">
+            <p>130 Main St</p>
+            <p>Boonville, NY 13309</p>
+            <p class="pt-1">
+              <a href="tel:+13159422212" class="hover:text-gold transition-colors duration-200">(315) 942-2212</a>
+            </p>
+            <div class="flex gap-5 pt-4">
+              <a href="https://www.instagram.com/wineandspiritsat130main/" target="_blank" rel="noopener noreferrer"
+                 class="text-cream/40 hover:text-gold transition-colors duration-200 text-xs uppercase tracking-wide">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=100069936797613" target="_blank" rel="noopener noreferrer"
+                 class="text-cream/40 hover:text-gold transition-colors duration-200 text-xs uppercase tracking-wide">Facebook</a>
+              <a href="https://maps.app.goo.gl/v2sfAuvqnneqZLHx8" target="_blank" rel="noopener noreferrer"
+                 class="text-cream/40 hover:text-gold transition-colors duration-200 text-xs uppercase tracking-wide">Google Maps</a>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gold/10 pt-6 text-center font-body text-cream/25 text-xs">
+        <p>&copy; <span id="copyright-year"></span> Wine &amp; Spirits at 130 Main. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:www.instagram.com)",
+      "WebFetch(domain:www.facebook.com)",
+      "WebFetch(domain:maps.app.goo.gl)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:www.wineandspiritsat130main.com)",
+      "WebFetch(domain:www.yelp.com)",
+      "Bash(ls:*)",
+      "Read(//Users/mattfrey/fredSite/**)",
+      "Bash(sips:*)",
+      "Bash(npx tailwindcss@3:*)"
+    ]
+  }
+}

@@ -1,0 +1,437 @@
+/* =============================================================
+   WINE & SPIRITS AT 130 MAIN — Custom Stylesheet
+   Complements Tailwind CDN (defined in index.html <head>)
+   ============================================================= */
+
+/* ---------------------------------------------------------------
+   BASE
+   --------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px; /* offset for fixed nav */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------------------------------------------
+   NAVBAR — scroll state
+   --------------------------------------------------------------- */
+#navbar {
+  background-color: transparent;
+}
+
+#navbar.scrolled {
+  background-color: #2C1810;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+}
+
+#navbar.menu-open {
+  background-color: #2C1810;
+}
+
+/* ---------------------------------------------------------------
+   HERO BACKGROUND — store exterior night photo
+   --------------------------------------------------------------- */
+.hero-bg {
+  background-color: #2C1810;
+  background-image: url('images/468623565_868401148780078_1188632662249623709_n.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------
+   HERO TEXT — shadows for readability over photo
+   --------------------------------------------------------------- */
+.hero-content h1,
+.hero-content p {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7), 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------------------------------
+   HERO CONTENT — fade-in-up animation
+   --------------------------------------------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-item {
+  opacity: 0;
+  animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-item:nth-child(1) { animation-delay: 0.05s; }
+.hero-item:nth-child(2) { animation-delay: 0.18s; }
+.hero-item:nth-child(3) { animation-delay: 0.30s; }
+.hero-item:nth-child(4) { animation-delay: 0.42s; }
+.hero-item:nth-child(5) { animation-delay: 0.54s; }
+
+/* ---------------------------------------------------------------
+   SCROLL INDICATOR — gentle bounce
+   --------------------------------------------------------------- */
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.4; }
+  50%       { transform: translateX(-50%) translateY(8px); opacity: 0.7; }
+}
+
+.scroll-indicator {
+  animation: scrollBounce 2.2s ease-in-out infinite;
+}
+
+/* ---------------------------------------------------------------
+   GOLD ORNAMENTAL DIVIDER
+   --------------------------------------------------------------- */
+.divider-gold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.divider-gold::before,
+.divider-gold::after {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 1px;
+  background-color: #C9A84C;
+  opacity: 0.6;
+}
+
+.diamond {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #C9A84C;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Light variant for dark backgrounds */
+.divider-gold-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.divider-gold-light::before,
+.divider-gold-light::after {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 1px;
+  background-color: #C9A84C;
+  opacity: 0.35;
+}
+
+.diamond-light {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #C9A84C;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+/* ---------------------------------------------------------------
+   SECTION LABELS (small caps above headings)
+   --------------------------------------------------------------- */
+.section-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #C9A84C;
+}
+
+.section-label-light {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  opacity: 0.75;
+}
+
+/* ---------------------------------------------------------------
+   BUTTONS
+   --------------------------------------------------------------- */
+.btn-primary {
+  display: inline-block;
+  background-color: #C9A84C;
+  color: #2C1810;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #C9A84C;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: #e0bb72;
+  border-color: #e0bb72;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: #FDF6EC;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid rgba(201, 168, 76, 0.65);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background-color: #C9A84C;
+  color: #2C1810;
+  border-color: #C9A84C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.3);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ---------------------------------------------------------------
+   SELECTION CARDS
+   --------------------------------------------------------------- */
+.selection-card {
+  background-color: #FDF6EC;
+  border: 1px solid #e5d4bb;
+  border-radius: 0.875rem;
+  padding: 2.75rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.selection-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 24px 50px rgba(44, 24, 16, 0.1), 0 4px 12px rgba(44, 24, 16, 0.06);
+}
+
+.featured-card {
+  border-color: #C9A84C;
+  border-width: 2px;
+}
+
+.featured-card:hover {
+  box-shadow: 0 24px 50px rgba(201, 168, 76, 0.18), 0 4px 12px rgba(44, 24, 16, 0.08);
+}
+
+.card-icon {
+  width: 68px;
+  height: 68px;
+  background-color: rgba(114, 47, 55, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  color: #722F37;
+  transition: background-color 0.2s ease;
+}
+
+.selection-card:hover .card-icon {
+  background-color: rgba(114, 47, 55, 0.13);
+}
+
+.card-icon-gold {
+  background-color: rgba(201, 168, 76, 0.12);
+  color: #8a6a1a;
+}
+
+.featured-card:hover .card-icon-gold {
+  background-color: rgba(201, 168, 76, 0.2);
+}
+
+.local-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #C9A84C;
+  color: #2C1810;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.4);
+}
+
+/* ---------------------------------------------------------------
+   SELECTION CARDS — photo variant
+   --------------------------------------------------------------- */
+.selection-card-photo {
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+}
+
+.card-photo-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  display: block;
+}
+
+.selection-card-photo:hover .card-photo {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.75rem 1.75rem 2rem;
+}
+
+/* ---------------------------------------------------------------
+   SOCIAL CARDS
+   --------------------------------------------------------------- */
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.75rem;
+  border-radius: 0.875rem;
+  text-decoration: none;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+}
+
+.instagram-card {
+  background: linear-gradient(135deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  box-shadow: 0 4px 20px rgba(220, 39, 67, 0.25);
+}
+
+.instagram-card:hover {
+  box-shadow: 0 14px 36px rgba(220, 39, 67, 0.4);
+}
+
+.facebook-card {
+  background-color: #1877F2;
+  box-shadow: 0 4px 20px rgba(24, 119, 242, 0.25);
+}
+
+.facebook-card:hover {
+  box-shadow: 0 14px 36px rgba(24, 119, 242, 0.4);
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------------------------------------
+   HOURS TABLE — zebra tint for readability
+   --------------------------------------------------------------- */
+.hours-table tr:nth-child(even) {
+  background-color: rgba(201, 168, 76, 0.04);
+}
+
+/* ---------------------------------------------------------------
+   FOOTER LINK HOVER STATE
+   --------------------------------------------------------------- */
+footer a {
+  transition: color 0.2s ease;
+}
+
+/* ---------------------------------------------------------------
+   CUSTOM SCROLLBAR (WebKit only — nice touch, completely optional)
+   --------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2C1810;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #C9A84C;
+  border-radius: 4px;
+  border: 2px solid #2C1810;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e0bb72;
+}
+
+/* ---------------------------------------------------------------
+   FOCUS STYLES — keyboard accessibility
+   --------------------------------------------------------------- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #C9A84C;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ---------------------------------------------------------------
+   PRINT — hide nav and social cards, keep content readable
+   --------------------------------------------------------------- */
+@media print {
+  #navbar,
+  .hero-bg,
+  .social-card,
+  .scroll-indicator,
+  footer { display: none; }
+
+  section {
+    padding: 1rem 0;
+    page-break-inside: avoid;
+  }
+}
