@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Wine glass bowl -->
+  <path d="M25 10 Q20 40 35 55 Q42 63 50 65 Q58 63 65 55 Q80 40 75 10 Z"
+        fill="#C9A84C"/>
+  <!-- Wine fill (red) -->
+  <path d="M30 10 Q27 30 38 48 Q43 55 50 57 Q57 55 62 48 Q73 30 70 10 Z"
+        fill="#722F37"/>
+  <!-- Stem -->
+  <rect x="47" y="65" width="6" height="20" rx="3" fill="#C9A84C"/>
+  <!-- Base -->
+  <ellipse cx="50" cy="87" rx="18" ry="4" fill="#C9A84C"/>
+</svg>

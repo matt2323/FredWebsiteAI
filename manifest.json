@@ -1,0 +1,12 @@
+{
+  "name": "Wine & Spirits at 130 Main",
+  "short_name": "130 Main",
+  "description": "Your local wine and spirits shop in Boonville, NY.",
+  "start_url": "/FredWebsiteAI/",
+  "display": "standalone",
+  "background_color": "#F5F0E8",
+  "theme_color": "#722F37",
+  "icons": [
+    { "src": "/FredWebsiteAI/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

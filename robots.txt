@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matt2323.github.io/FredWebsiteAI/sitemap.xml
